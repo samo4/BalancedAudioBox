@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DRV135UA_2K5
+D Audio Balanced Line Drivers
+F http://www.ti.com/lit/gpn/drv135
+$ENDCMP
+#
+$CMP TPS61240IDRVRQ1
+D Automotive 2.3V to 5.5V Input Range, 3.5 MHz Fixed Frequency 450mA Boost Converter
+F http://www.ti.com/lit/gpn/tps61240-q1
+$ENDCMP
+#
+#End Doc Library

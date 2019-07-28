@@ -1,0 +1,188 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4600 5700 1050 800 
+U 5D3D9E16
+F0 "PowerSupply" 50
+F1 "PowerSupply.sch" 50
+$EndSheet
+$Sheet
+S 7450 1350 2450 2850
+U 5D3D9E6F
+F0 "OutputDriver" 50
+F1 "OutputDriver.sch" 50
+F2 "LEFT" I L 7450 2150 50 
+$EndSheet
+$Sheet
+S 4150 1350 2150 2850
+U 5D41DA57
+F0 "DAC" 50
+F1 "DAC.sch" 50
+F2 "LRCLK" I L 4150 2500 50 
+F3 "DIN" I L 4150 2700 50 
+F4 "BCLK" I L 4150 2600 50 
+F5 "MCLK" I L 4150 1900 50 
+F6 "LEFT" I R 6300 2150 50 
+F7 "RIGHT" I R 6300 2250 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J1
+U 1 1 5D43FB9A
+P 2650 2400
+F 0 "J1" H 2700 3017 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 2700 2926 50  0000 C CNN
+F 2 "BalancedAudioBox:XMOS_USB_Board_2x10_P2.54mm" H 2650 2400 50  0001 C CNN
+F 3 "~" H 2650 2400 50  0001 C CNN
+	1    2650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2000 2200 2000
+Wire Wire Line
+	2450 2100 2200 2100
+Wire Wire Line
+	2450 2200 2200 2200
+Wire Wire Line
+	2450 2300 2200 2300
+Wire Wire Line
+	2450 2800 2200 2800
+Wire Wire Line
+	2450 2900 2200 2900
+Text Label 2200 2000 0    50   ~ 0
+F3
+Text Label 2200 2100 0    50   ~ 0
+F2
+Text Label 2200 2200 0    50   ~ 0
+F1
+Text Label 2200 2300 0    50   ~ 0
+F0
+Text Label 2200 2800 0    50   ~ 0
+MUTE
+Text Label 2200 2900 0    50   ~ 0
+SPDIF
+Wire Wire Line
+	2950 2700 4150 2700
+Wire Wire Line
+	4150 2600 2950 2600
+Wire Wire Line
+	2950 2500 4150 2500
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5D44914E
+P 3200 1750
+F 0 "#PWR02" H 3200 1600 50  0001 C CNN
+F 1 "+3.3V" H 3215 1923 50  0000 C CNN
+F 2 "" H 3200 1750 50  0001 C CNN
+F 3 "" H 3200 1750 50  0001 C CNN
+	1    3200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2100 3200 2100
+Wire Wire Line
+	3200 2100 3200 1750
+$Comp
+L power:GND #PWR03
+U 1 1 5D449C76
+P 3200 3150
+F 0 "#PWR03" H 3200 2900 50  0001 C CNN
+F 1 "GND" H 3205 2977 50  0000 C CNN
+F 2 "" H 3200 3150 50  0001 C CNN
+F 3 "" H 3200 3150 50  0001 C CNN
+	1    3200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2200 3200 2200
+Wire Wire Line
+	3200 2200 3200 3150
+Wire Wire Line
+	2950 2300 3450 2300
+Text Label 3450 2300 0    50   ~ 0
+DSDOE
+$Comp
+L power:GND #PWR01
+U 1 1 5D44AE10
+P 2050 3150
+F 0 "#PWR01" H 2050 2900 50  0001 C CNN
+F 1 "GND" H 2055 2977 50  0000 C CNN
+F 2 "" H 2050 3150 50  0001 C CNN
+F 3 "" H 2050 3150 50  0001 C CNN
+	1    2050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3150 2050 2700
+Wire Wire Line
+	2050 2700 2450 2700
+Wire Wire Line
+	2450 2600 2050 2600
+Wire Wire Line
+	2050 2600 2050 2700
+Connection ~ 2050 2700
+Wire Wire Line
+	2450 2500 2050 2500
+Wire Wire Line
+	2050 2500 2050 2600
+Connection ~ 2050 2600
+Wire Wire Line
+	2450 2400 2200 2400
+Text Label 2200 2400 0    50   ~ 0
+D64
+Wire Wire Line
+	6300 2150 7450 2150
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5D44CB93
+P 3200 5950
+F 0 "J2" H 3118 5725 50  0000 C CNN
+F 1 "Conn_01x01" H 3118 5816 50  0000 C CNN
+F 2 "" H 3200 5950 50  0001 C CNN
+F 3 "~" H 3200 5950 50  0001 C CNN
+	1    3200 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP3
+U 1 1 5D47A7E1
+P 3850 1900
+F 0 "JP3" H 3750 2150 50  0000 L CNN
+F 1 "PLL operation" H 3650 2050 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 3850 1900 50  0001 C CNN
+F 3 "~" H 3850 1900 50  0001 C CNN
+	1    3850 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 1900 4150 1900
+Wire Wire Line
+	2950 2400 3850 2400
+Wire Wire Line
+	3850 2400 3850 2100
+$Comp
+L power:GND #PWR04
+U 1 1 5D47C616
+P 3850 1500
+F 0 "#PWR04" H 3850 1250 50  0001 C CNN
+F 1 "GND" H 3855 1327 50  0000 C CNN
+F 2 "" H 3850 1500 50  0001 C CNN
+F 3 "" H 3850 1500 50  0001 C CNN
+	1    3850 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 1700 3850 1500
+$EndSCHEMATC
