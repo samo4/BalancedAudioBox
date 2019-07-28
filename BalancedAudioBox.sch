@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:BalancedAudioBox-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -18,6 +19,7 @@ S 4600 5700 1050 800
 U 5D3D9E16
 F0 "PowerSupply" 50
 F1 "PowerSupply.sch" 50
+F2 "VIN" I L 4600 5950 50 
 $EndSheet
 $Sheet
 S 7450 1350 2450 2850
@@ -145,17 +147,6 @@ D64
 Wire Wire Line
 	6300 2150 7450 2150
 $Comp
-L Connector_Generic:Conn_01x01 J2
-U 1 1 5D44CB93
-P 3200 5950
-F 0 "J2" H 3118 5725 50  0000 C CNN
-F 1 "Conn_01x01" H 3118 5816 50  0000 C CNN
-F 2 "" H 3200 5950 50  0001 C CNN
-F 3 "~" H 3200 5950 50  0001 C CNN
-	1    3200 5950
-	-1   0    0    1   
-$EndComp
-$Comp
 L Jumper:SolderJumper_3_Bridged12 JP3
 U 1 1 5D47A7E1
 P 3850 1900
@@ -185,4 +176,34 @@ F 3 "" H 3850 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 1700 3850 1500
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D40F023
+P 2950 5950
+F 0 "J?" H 2868 6167 50  0000 C CNN
+F 1 "Conn_01x02" H 2868 6076 50  0000 C CNN
+F 2 "" H 2950 5950 50  0001 C CNN
+F 3 "~" H 2950 5950 50  0001 C CNN
+	1    2950 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5950 4600 5950
+$Comp
+L power:GND #PWR?
+U 1 1 5D40FB13
+P 3300 6250
+F 0 "#PWR?" H 3300 6000 50  0001 C CNN
+F 1 "GND" H 3305 6077 50  0000 C CNN
+F 2 "" H 3300 6250 50  0001 C CNN
+F 3 "" H 3300 6250 50  0001 C CNN
+	1    3300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6050 3300 6050
+Wire Wire Line
+	3300 6050 3300 6250
+Text Notes 3150 5650 0    50   ~ 0
+max 200mA limited by TPS61252
 $EndSCHEMATC

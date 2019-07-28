@@ -10,4 +10,9 @@ D Automotive 2.3V to 5.5V Input Range, 3.5 MHz Fixed Frequency 450mA Boost Conve
 F http://www.ti.com/lit/gpn/tps61240-q1
 $ENDCMP
 #
+$CMP TPS61252DSGT
+D TPS61252DSGT, DC-DC Converter, 1500mA Adjustable, 3  6.5 V, Step Up, 3.25 MHz, 8-Pin SON W
+F http://www.ti.com/lit/ds/symlink/tps61252.pdf
+$ENDCMP
+#
 #End Doc Library
