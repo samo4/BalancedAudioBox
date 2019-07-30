@@ -27,6 +27,7 @@ U 5D3D9E6F
 F0 "OutputDriver" 50
 F1 "OutputDriver.sch" 50
 F2 "LEFT" I L 7450 2150 50 
+F3 "RIGHT" I L 7450 2250 50 
 $EndSheet
 $Sheet
 S 4150 1350 2150 2850
@@ -177,12 +178,12 @@ $EndComp
 Wire Wire Line
 	3850 1700 3850 1500
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5D40F023
 P 2950 5950
-F 0 "J?" H 2868 6167 50  0000 C CNN
+F 0 "J2" H 2868 6167 50  0000 C CNN
 F 1 "Conn_01x02" H 2868 6076 50  0000 C CNN
-F 2 "" H 2950 5950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2950 5950 50  0001 C CNN
 F 3 "~" H 2950 5950 50  0001 C CNN
 	1    2950 5950
 	-1   0    0    -1  
@@ -190,10 +191,10 @@ $EndComp
 Wire Wire Line
 	3150 5950 4600 5950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR049
 U 1 1 5D40FB13
 P 3300 6250
-F 0 "#PWR?" H 3300 6000 50  0001 C CNN
+F 0 "#PWR049" H 3300 6000 50  0001 C CNN
 F 1 "GND" H 3305 6077 50  0000 C CNN
 F 2 "" H 3300 6250 50  0001 C CNN
 F 3 "" H 3300 6250 50  0001 C CNN
@@ -206,4 +207,13 @@ Wire Wire Line
 	3300 6050 3300 6250
 Text Notes 3150 5650 0    50   ~ 0
 max 200mA limited by TPS61252
+NoConn ~ 2200 2800
+NoConn ~ 2200 2900
+NoConn ~ 2200 2000
+NoConn ~ 2200 2100
+NoConn ~ 2200 2200
+NoConn ~ 2200 2300
+NoConn ~ 2200 2400
+Wire Wire Line
+	6300 2250 7450 2250
 $EndSCHEMATC

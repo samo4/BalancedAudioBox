@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP DPU01L-15
+D Isolated DC/DC Converters 4.5-5.5Vin +/-15Vout +/-33mA SIP6 Unreg
+F https://media.digikey.com/pdf/Data%20Sheets/Mean%20Well%20PDF's/SPU01,DUP01_Series_Ds.pdf
+$ENDCMP
+#
 $CMP DRV135UA_2K5
 D Audio Balanced Line Drivers
 F http://www.ti.com/lit/gpn/drv135
