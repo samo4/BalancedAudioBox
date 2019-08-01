@@ -177,17 +177,6 @@ F 3 "" H 3850 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 1700 3850 1500
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5D40F023
-P 2950 5950
-F 0 "J2" H 2868 6167 50  0000 C CNN
-F 1 "Conn_01x02" H 2868 6076 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2950 5950 50  0001 C CNN
-F 3 "~" H 2950 5950 50  0001 C CNN
-	1    2950 5950
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3150 5950 4600 5950
 $Comp
@@ -205,7 +194,7 @@ Wire Wire Line
 	3150 6050 3300 6050
 Wire Wire Line
 	3300 6050 3300 6250
-Text Notes 3150 5650 0    50   ~ 0
+Text Notes 3500 5550 0    50   ~ 0
 max 200mA limited by TPS61252
 NoConn ~ 2200 2800
 NoConn ~ 2200 2900
@@ -216,4 +205,31 @@ NoConn ~ 2200 2300
 NoConn ~ 2200 2400
 Wire Wire Line
 	6300 2250 7450 2250
+NoConn ~ 3450 2300
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5D436D81
+P 2950 5950
+F 0 "J2" H 2868 6267 50  0000 C CNN
+F 1 "Conn_01x03" H 2868 6176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2950 5950 50  0001 C CNN
+F 3 "~" H 2950 5950 50  0001 C CNN
+	1    2950 5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5D437E68
+P 3250 5500
+F 0 "#PWR0101" H 3250 5350 50  0001 C CNN
+F 1 "+3.3V" H 3265 5673 50  0000 C CNN
+F 2 "" H 3250 5500 50  0001 C CNN
+F 3 "" H 3250 5500 50  0001 C CNN
+	1    3250 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5850 3250 5850
+Wire Wire Line
+	3250 5850 3250 5500
 $EndSCHEMATC
