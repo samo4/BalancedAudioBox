@@ -1,4 +1,4 @@
-(module XMOS_USB_Board_2x10_P2.54mm (layer F.Cu) (tedit 5D431336)
+(module XMOS_USB_Board_2x10_P2.54mm (layer F.Cu) (tedit 5D441E2C)
   (descr "Through hole straight pin header, 2x10, 2.54mm pitch, double rows")
   (tags "Through hole pin header THT 2x10 2.54mm double row")
   (fp_text reference REF** (at -5.08 -1.27) (layer F.SilkS)
@@ -71,5 +71,10 @@
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
+  )
+  (model "${KIPRJMOD}/lib/BalancedAudioBox.3dshapes/XMOS Board.step"
+    (offset (xyz 10 -26.6 10))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 -90))
   )
 )
