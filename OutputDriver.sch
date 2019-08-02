@@ -238,7 +238,7 @@ Wire Wire Line
 Text HLabel 2050 3250 0    50   Input ~ 0
 LEFT
 Wire Wire Line
-	2050 3250 2750 3250
+	2050 3250 2250 3250
 $Comp
 L Device:C C?
 U 1 1 5D43B3A7
@@ -547,7 +547,7 @@ Wire Wire Line
 Text HLabel 2050 6200 0    50   Input ~ 0
 RIGHT
 Wire Wire Line
-	2050 6200 2750 6200
+	2050 6200 2250 6200
 $Comp
 L Device:C C?
 U 1 1 5D40E20B
@@ -630,4 +630,52 @@ F 3 "" H 6400 5650 50  0001 C CNN
 	1    6400 5650
 	1    0    0    -1  
 $EndComp
+Text Label 4300 1650 0    50   ~ 0
+LEFT_VOP
+Text Label 3150 2550 0    50   ~ 0
+LEFT_VON
+Text Label 4300 4600 0    50   ~ 0
+RIGHT_VOP
+Text Label 3150 5500 0    50   ~ 0
+RIGHT_VON
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5D474BC9
+P 1950 4300
+F 0 "J8" H 1868 4617 50  0000 C CNN
+F 1 "Conn_01x03" H 1868 4526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1950 4300 50  0001 C CNN
+F 3 "~" H 1950 4300 50  0001 C CNN
+	1    1950 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4200 2250 4200
+Wire Wire Line
+	2250 4200 2250 3250
+Connection ~ 2250 3250
+Wire Wire Line
+	2250 3250 2750 3250
+Wire Wire Line
+	2150 4400 2250 4400
+Wire Wire Line
+	2250 4400 2250 6200
+Connection ~ 2250 6200
+Wire Wire Line
+	2250 6200 2750 6200
+$Comp
+L power:GND #PWR0103
+U 1 1 5D47842A
+P 2400 4500
+F 0 "#PWR0103" H 2400 4250 50  0001 C CNN
+F 1 "GND" H 2405 4327 50  0000 C CNN
+F 2 "" H 2400 4500 50  0001 C CNN
+F 3 "" H 2400 4500 50  0001 C CNN
+	1    2400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4300 2400 4300
+Wire Wire Line
+	2400 4300 2400 4500
 $EndSCHEMATC

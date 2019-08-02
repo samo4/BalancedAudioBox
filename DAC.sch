@@ -635,4 +635,8 @@ F 3 "" H 3200 3250 50  0001 C CNN
 	1    3200 3250
 	1    0    0    -1  
 $EndComp
+Text Label 4350 4350 0    50   ~ 0
+DEEMP
+Text Label 4500 3800 0    50   ~ 0
+LATENCY
 $EndSCHEMATC

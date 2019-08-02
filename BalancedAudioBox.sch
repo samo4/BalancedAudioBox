@@ -288,4 +288,46 @@ Wire Wire Line
 	8150 5550 8500 5550
 Wire Wire Line
 	8500 5550 8500 6050
+Text Label 3400 2500 0    50   ~ 0
+LRCLK
+Text Label 3400 2600 0    50   ~ 0
+BCLK
+Text Label 3400 2700 0    50   ~ 0
+DIN
+Text Label 3400 2400 0    50   ~ 0
+MCLK
+$Comp
+L Connector_Generic:Conn_01x05 J7
+U 1 1 5D4691F7
+P 3000 4300
+F 0 "J7" H 2918 4717 50  0000 C CNN
+F 1 "Conn_01x05" H 2918 4626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3000 4300 50  0001 C CNN
+F 3 "~" H 3000 4300 50  0001 C CNN
+	1    3000 4300
+	-1   0    0    -1  
+$EndComp
+Text Label 3200 4100 0    50   ~ 0
+MCLK
+Text Label 3200 4200 0    50   ~ 0
+LRCLK
+Text Label 3200 4300 0    50   ~ 0
+BCLK
+Text Label 3200 4400 0    50   ~ 0
+DIN
+$Comp
+L power:GND #PWR0102
+U 1 1 5D46AD06
+P 3300 4650
+F 0 "#PWR0102" H 3300 4400 50  0001 C CNN
+F 1 "GND" H 3305 4477 50  0000 C CNN
+F 2 "" H 3300 4650 50  0001 C CNN
+F 3 "" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4500 3300 4500
+Wire Wire Line
+	3300 4500 3300 4650
 $EndSCHEMATC

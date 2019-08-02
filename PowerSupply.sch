@@ -734,7 +734,7 @@ U 1 1 5D46B0BF
 P 5500 3050
 F 0 "J6" H 5580 3042 50  0000 L CNN
 F 1 "Conn_01x02" H 5580 2951 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5500 3050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 3050 50  0001 C CNN
 F 3 "~" H 5500 3050 50  0001 C CNN
 	1    5500 3050
 	1    0    0    -1  
