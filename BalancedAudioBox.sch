@@ -207,32 +207,6 @@ Wire Wire Line
 	6300 2250 7450 2250
 NoConn ~ 3450 2300
 $Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5D436D81
-P 2950 5950
-F 0 "J2" H 2868 6267 50  0000 C CNN
-F 1 "Conn_01x03" H 2868 6176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2950 5950 50  0001 C CNN
-F 3 "~" H 2950 5950 50  0001 C CNN
-	1    2950 5950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5D437E68
-P 3250 5500
-F 0 "#PWR0101" H 3250 5350 50  0001 C CNN
-F 1 "+3.3V" H 3265 5673 50  0000 C CNN
-F 2 "" H 3250 5500 50  0001 C CNN
-F 3 "" H 3250 5500 50  0001 C CNN
-	1    3250 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 5850 3250 5850
-Wire Wire Line
-	3250 5850 3250 5500
-$Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5D431850
 P 7950 5550
@@ -332,4 +306,15 @@ Wire Wire Line
 	3300 4500 3300 4650
 Text GLabel 3950 5950 1    50   Input ~ 0
 VIN
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D4B761F
+P 2950 6050
+F 0 "J2" H 2868 5725 50  0000 C CNN
+F 1 "Conn_01x02" H 2868 5816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2950 6050 50  0001 C CNN
+F 3 "~" H 2950 6050 50  0001 C CNN
+	1    2950 6050
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

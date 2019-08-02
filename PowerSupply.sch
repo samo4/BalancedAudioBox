@@ -757,8 +757,6 @@ Wire Wire Line
 Connection ~ 5150 3400
 Wire Wire Line
 	5150 3400 5500 3400
-Text Label 6050 3400 0    50   ~ 0
-VOUT-5.4V
 Text Label 8100 4200 0    50   ~ 0
 CP
 Text Label 8100 4000 0    50   ~ 0
@@ -773,4 +771,11 @@ Text Label 3700 3600 0    50   ~ 0
 ILIM
 Text Label 4250 3850 0    50   ~ 0
 FB
+Text GLabel 5350 2800 2    50   Input ~ 0
+VOUT-5.4V
+Wire Wire Line
+	5150 3050 5150 2800
+Wire Wire Line
+	5150 2800 5350 2800
+Connection ~ 5150 3050
 $EndSCHEMATC
