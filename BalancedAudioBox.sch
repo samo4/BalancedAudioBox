@@ -330,4 +330,6 @@ Wire Wire Line
 	3200 4500 3300 4500
 Wire Wire Line
 	3300 4500 3300 4650
+Text GLabel 3950 5950 1    50   Input ~ 0
+VIN
 $EndSCHEMATC
