@@ -271,12 +271,12 @@ DIN
 Text Label 3400 2400 0    50   ~ 0
 MCLK
 $Comp
-L Connector_Generic:Conn_01x05 J7
+L Connector_Generic:Conn_01x06 J7
 U 1 1 5D4691F7
 P 3000 4300
 F 0 "J7" H 2918 4717 50  0000 C CNN
-F 1 "Conn_01x05" H 2918 4626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3000 4300 50  0001 C CNN
+F 1 "Conn_01x06" H 2918 4626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3000 4300 50  0001 C CNN
 F 3 "~" H 3000 4300 50  0001 C CNN
 	1    3000 4300
 	-1   0    0    -1  
@@ -300,10 +300,6 @@ F 3 "" H 3300 4650 50  0001 C CNN
 	1    3300 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 4500 3300 4500
-Wire Wire Line
-	3300 4500 3300 4650
 Text GLabel 3950 5950 1    50   Input ~ 0
 VIN
 $Comp
@@ -317,4 +313,23 @@ F 3 "~" H 2950 6050 50  0001 C CNN
 	1    2950 6050
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	3200 4600 3300 4600
+Wire Wire Line
+	3300 4600 3300 4650
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5DDD4DCB
+P 3550 4450
+F 0 "#PWR0101" H 3550 4300 50  0001 C CNN
+F 1 "+3.3V" H 3565 4623 50  0000 C CNN
+F 2 "" H 3550 4450 50  0001 C CNN
+F 3 "" H 3550 4450 50  0001 C CNN
+	1    3550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4500 3550 4500
+Wire Wire Line
+	3550 4500 3550 4450
 $EndSCHEMATC

@@ -463,9 +463,7 @@ F 3 "" H 3200 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 4650 3200 4500
-Wire Wire Line
-	3200 3600 3200 3250
-Text Notes 3750 1800 0    50   ~ 0
+Text Notes 5750 1150 0    50   ~ 0
 22R resistors on data signals?
 $Comp
 L Jumper:Jumper_3_Open JP1
@@ -578,8 +576,6 @@ Text Label 4350 4350 0    50   ~ 0
 DEEMP
 Text Label 4500 3800 0    50   ~ 0
 LATENCY
-Text GLabel 3200 3250 1    50   Input ~ 0
-VIN
 Text Notes 2600 4200 0    50   ~ 0
 5.5V to 3.3V
 Text Notes 2350 4350 0    50   ~ 0
@@ -626,40 +622,40 @@ Wire Wire Line
 $Comp
 L Regulator_Linear:AP1117-33 U3
 U 1 1 5D456577
-P 10050 2350
-F 0 "U3" H 10050 2592 50  0000 C CNN
-F 1 "AP1117-33" H 10050 2501 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 10050 2550 50  0001 C CNN
-F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 10150 2100 50  0001 C CNN
-	1    10050 2350
+P 3600 2150
+F 0 "U3" H 3600 2392 50  0000 C CNN
+F 1 "AP1117-33" H 3600 2301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3600 2350 50  0001 C CNN
+F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3700 1900 50  0001 C CNN
+	1    3600 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR047
 U 1 1 5D457C9B
-P 10050 2750
-F 0 "#PWR047" H 10050 2500 50  0001 C CNN
-F 1 "GND" H 10055 2577 50  0000 C CNN
-F 2 "" H 10050 2750 50  0001 C CNN
-F 3 "" H 10050 2750 50  0001 C CNN
-	1    10050 2750
+P 3600 2550
+F 0 "#PWR047" H 3600 2300 50  0001 C CNN
+F 1 "GND" H 3605 2377 50  0000 C CNN
+F 2 "" H 3600 2550 50  0001 C CNN
+F 3 "" H 3600 2550 50  0001 C CNN
+	1    3600 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VA #PWR079
 U 1 1 5D457FEA
-P 10550 2350
-F 0 "#PWR079" H 10550 2200 50  0001 C CNN
-F 1 "+3.3VA" V 10565 2478 50  0000 L CNN
-F 2 "" H 10550 2350 50  0001 C CNN
-F 3 "" H 10550 2350 50  0001 C CNN
-	1    10550 2350
+P 4100 2150
+F 0 "#PWR079" H 4100 2000 50  0001 C CNN
+F 1 "+3.3VA" V 4115 2278 50  0000 L CNN
+F 2 "" H 4100 2150 50  0001 C CNN
+F 3 "" H 4100 2150 50  0001 C CNN
+	1    4100 2150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10050 2650 10050 2750
+	3600 2450 3600 2550
 Wire Wire Line
-	10350 2350 10550 2350
+	3900 2150 4100 2150
 Wire Wire Line
 	5350 3100 5350 2550
 Wire Wire Line
@@ -683,22 +679,27 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP4
 U 1 1 5D497685
-P 9450 2350
-F 0 "JP4" V 9496 2418 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged12" V 9405 2418 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 9450 2350 50  0001 C CNN
-F 3 "~" H 9450 2350 50  0001 C CNN
-	1    9450 2350
+P 3000 2150
+F 0 "JP4" V 3046 2218 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 2955 2218 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 3000 2150 50  0001 C CNN
+F 3 "~" H 3000 2150 50  0001 C CNN
+	1    3000 2150
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9450 1950 1    50   Input ~ 0
+Text GLabel 3000 1750 1    50   Input ~ 0
 VIN
 Wire Wire Line
-	9450 2150 9450 1950
+	3000 1950 3000 1750
 Wire Wire Line
-	9600 2350 9750 2350
-Text GLabel 9450 2700 3    50   Input ~ 0
-VOUT-5.4V
+	3150 2150 3200 2150
+Text GLabel 3000 2500 3    50   Input ~ 0
++5.4V
 Wire Wire Line
-	9450 2700 9450 2550
+	3000 2500 3000 2350
+Wire Wire Line
+	3200 3600 3200 2150
+Connection ~ 3200 2150
+Wire Wire Line
+	3200 2150 3300 2150
 $EndSCHEMATC

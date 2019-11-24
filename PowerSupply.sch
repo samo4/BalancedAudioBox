@@ -772,7 +772,7 @@ ILIM
 Text Label 4250 3850 0    50   ~ 0
 FB
 Text GLabel 5350 2800 2    50   Input ~ 0
-VOUT-5.4V
++5.4V
 Wire Wire Line
 	5150 3050 5150 2800
 Wire Wire Line
