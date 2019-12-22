@@ -221,8 +221,8 @@ L Device:C C3
 U 1 1 5D415CAC
 P 6650 4100
 F 0 "C3" H 6765 4146 50  0000 L CNN
-F 1 "4.7u" H 6765 4055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6688 3950 50  0001 C CNN
+F 1 "1u" H 6765 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6688 3950 50  0001 C CNN
 F 3 "~" H 6650 4100 50  0001 C CNN
 	1    6650 4100
 	1    0    0    -1  
@@ -337,8 +337,6 @@ F 4 "SRN3015-1R5Y" V 2100 3400 50  0001 C CNN "PN"
 	1    2100 3400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2250 3400 2500 3400
 Wire Wire Line
 	2500 3300 2450 3300
 Wire Wire Line
@@ -614,7 +612,7 @@ U 1 1 5D3F13AC
 P 8650 4500
 F 0 "C21" H 8765 4546 50  0000 L CNN
 F 1 "4.7u" H 8765 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8688 4350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8688 4350 50  0001 C CNN
 F 3 "~" H 8650 4500 50  0001 C CNN
 	1    8650 4500
 	1    0    0    -1  
@@ -625,7 +623,7 @@ U 1 1 5D3F1A6F
 P 9300 4500
 F 0 "C22" H 9415 4546 50  0000 L CNN
 F 1 "4.7u" H 9415 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9338 4350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9338 4350 50  0001 C CNN
 F 3 "~" H 9300 4500 50  0001 C CNN
 	1    9300 4500
 	1    0    0    -1  
@@ -780,8 +778,6 @@ Wire Wire Line
 Connection ~ 5150 3050
 Text Notes 1450 5750 0    50   ~ 0
 Perhaps do not populate C27 and C5
-Text Label 2300 3400 0    50   ~ 0
-SW
 Wire Wire Line
 	7650 4400 7650 4600
 Wire Wire Line
@@ -789,4 +785,8 @@ Wire Wire Line
 Connection ~ 7550 4600
 Wire Wire Line
 	7550 4600 7550 4700
+Wire Wire Line
+	2250 3400 2500 3400
+Text Label 2300 3400 1    50   ~ 0
+SWITCH
 $EndSCHEMATC

@@ -466,28 +466,6 @@ Wire Wire Line
 Text Notes 5750 1150 0    50   ~ 0
 22R resistors on data signals?
 $Comp
-L Jumper:Jumper_3_Open JP1
-U 1 1 5D45825E
-P 4150 3700
-F 0 "JP1" V 4196 3787 50  0000 L CNN
-F 1 "Latency" V 4105 3787 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4150 3700 50  0001 C CNN
-F 3 "~" H 4150 3700 50  0001 C CNN
-	1    4150 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Jumper:Jumper_3_Open JP2
-U 1 1 5D45BA3C
-P 3700 4350
-F 0 "JP2" H 3850 4600 50  0000 L CNN
-F 1 "De-emphasis" H 3450 4500 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3700 4350 50  0001 C CNN
-F 3 "~" H 3700 4350 50  0001 C CNN
-	1    3700 4350
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+3.3V #PWR033
 U 1 1 5D41F899
 P 5450 2900
@@ -534,10 +512,6 @@ F 3 "" H 4150 3250 50  0001 C CNN
 	1    4150 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3700 4100 3700 3250
-Wire Wire Line
-	4150 3450 4150 3250
 $Comp
 L power:GND #PWR029
 U 1 1 5D4731D7
@@ -560,14 +534,10 @@ F 3 "" H 4150 4650 50  0001 C CNN
 	1    4150 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 4650 4150 3950
-Wire Wire Line
-	3700 4650 3700 4600
 Text Notes 4150 5550 0    50   ~ 0
-JP1 Latency\n1-2: Normal (default)\n2-3: Low\n
+JP2 Latency\n1-2: Normal (default)\n2-3: Low\n
 Text Notes 3400 5550 0    50   ~ 0
-JP2 De-emphasis\n1-2: Off\n2-3: On
+JP1 De-emphasis\n1-2: Off\n2-3: On
 Text Notes 7250 2750 0    50   ~ 0
 f3=(R1+R2)/(2*PI*R1*R2*C1)
 Text Notes 2650 4050 0    50   ~ 0
@@ -620,17 +590,6 @@ Wire Wire Line
 Wire Wire Line
 	10650 3900 10650 4150
 $Comp
-L Regulator_Linear:AP1117-33 U3
-U 1 1 5D456577
-P 3600 2150
-F 0 "U3" H 3600 2392 50  0000 C CNN
-F 1 "AP1117-33" H 3600 2301 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3600 2350 50  0001 C CNN
-F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3700 1900 50  0001 C CNN
-	1    3600 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR047
 U 1 1 5D457C9B
 P 3600 2600
@@ -681,7 +640,7 @@ L Jumper:SolderJumper_3_Bridged12 JP4
 U 1 1 5D497685
 P 3000 2150
 F 0 "JP4" V 3046 2218 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged12" V 2955 2218 50  0000 L CNN
+F 1 "Power source" V 2955 2218 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 3000 2150 50  0001 C CNN
 F 3 "~" H 3000 2150 50  0001 C CNN
 	1    3000 2150
@@ -729,4 +688,49 @@ Wire Wire Line
 Connection ~ 4000 2150
 Wire Wire Line
 	4000 2150 4100 2150
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP?
+U 1 1 5DDBF282
+P 4150 3700
+AR Path="/5DDBF282" Ref="JP?"  Part="1" 
+AR Path="/5D41DA57/5DDBF282" Ref="JP2"  Part="1" 
+F 0 "JP2" H 4050 3950 50  0000 L CNN
+F 1 "Latency" H 3950 3850 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 4150 3700 50  0001 C CNN
+F 3 "~" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP?
+U 1 1 5DDC0F99
+P 3700 4350
+AR Path="/5DDC0F99" Ref="JP?"  Part="1" 
+AR Path="/5D41DA57/5DDC0F99" Ref="JP1"  Part="1" 
+F 0 "JP1" H 3600 4600 50  0000 L CNN
+F 1 "De-emphasis" H 3500 4500 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 3700 4350 50  0001 C CNN
+F 3 "~" H 3700 4350 50  0001 C CNN
+	1    3700 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 3250 3700 4150
+Wire Wire Line
+	3700 4550 3700 4650
+Wire Wire Line
+	4150 3900 4150 4650
+Wire Wire Line
+	4150 3250 4150 3500
+$Comp
+L Regulator_Linear:AP1117-33 U3
+U 1 1 5D456577
+P 3600 2150
+F 0 "U3" H 3600 2392 50  0000 C CNN
+F 1 "AP1117-33" H 3600 2301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3600 2350 50  0001 C CNN
+F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3700 1900 50  0001 C CNN
+	1    3600 2150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
