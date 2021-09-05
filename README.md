@@ -2,6 +2,8 @@
 
 USB connected balanced +4dBu DAC. Also USB powered. And allegedly 384kHz/32bit.
 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 ![Balanced Audio Box render](./media/BalancedAudioBox.jpg?raw=true)
 
 ### Background
@@ -14,7 +16,7 @@ The first prototype is working great, documentation is under construction.
 
 ## How to make one
 
-It's an electronics project, so you can use gerbers to make boards, buy components at your favourite distributor, buy "USB IIS Digital Interface DAC Decoder Board Support DSD512 32bit 384K I2S DSD" or "XMOS CPLD USB digital interface xu208 Module I2S SPDIF Output DSD256 Decoder Board for DAC Compatible with Italian Amanero H011" on AliExpress, 3D print the enclosure and assemble everything.
+It's an electronics project, so you can use gerbers to make boards, buy components at your favourite distributor, buy [USB to I2S board](https://amanero.com/) or chinese clone, 3D print the enclosure and assemble everything.
 
 STEP files are included, and here's [the link](https://a360.co/3yRnoUF) to Fusion.
 
