@@ -18,6 +18,9 @@ It's an electronics project, so you can use gerbers to make boards, buy componen
 
 STEP files are included, and here's [the link](https://a360.co/3yRnoUF) to Fusion.
 
+![NUC inspired case](./media/NUC-like-case.jpg?raw=true)
+
+
 
 
 
